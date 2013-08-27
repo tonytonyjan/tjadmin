@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tjadmin (0.0.3)
+    tjadmin (0.0.4)
       bootstrap-sass
       font-awesome-rails
       rails
