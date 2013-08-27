@@ -26,10 +26,10 @@
 ### Generate Example
 
     $ rails g tjadmin
-      create  app/views/admin
-      create  app/views/admin/_breadcrumbs.html.erb
-      create  app/views/admin/_navbar.html.erb
-      create  app/views/admin/_settings.html.erb
-      create  app/views/admin/_shortcuts.html.erb
-      create  app/views/admin/_sidebar.html.erb
-      create  app/views/admin/application.html.erb
+       exist  app/views
+      create  app/views/layouts/admin/_breadcrumbs.html.erb
+      create  app/views/layouts/admin/_navbar.html.erb
+      create  app/views/layouts/admin/_settings.html.erb
+      create  app/views/layouts/admin/_shortcuts.html.erb
+      create  app/views/layouts/admin/_sidebar.html.erb
+      create  app/views/layouts/admin/application.html.erb
