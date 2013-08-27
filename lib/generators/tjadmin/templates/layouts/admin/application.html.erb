@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Empty Page - Ace Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <%= stylesheet_link_tag    "tjadmin", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "tjadmin/ace-extra", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <!--[if lte IE 8]>
+      <%= stylesheet_link_tag "tjadmin/ace-ie", media: "all", "data-turbolinks-track" => true %>
+    <![endif]-->
+  </head>
+
+  <body>
+    <%= render 'layouts/admin/navbar' %>
+    <div class="main-container container-fluid">
+      <a class="menu-toggler" id="menu-toggler" href="#">
+        <span class="menu-text"></span>
+      </a>
+
+      <%= render 'layouts/admin/sidebar' %>
+
+      <div class="main-content">
+        <%= render 'layouts/admin/breadcrumbs' %>
+
+        <div class="page-content">
+          <div class="row-fluid">
+            <div class="span12">
+              <!--PAGE CONTENT BEGINS-->
+              <%= yield %>
+              <!--PAGE CONTENT ENDS-->
+            </div><!--/.span-->
+          </div><!--/.row-fluid-->
+        </div><!--/.page-content-->
+
+        <%= render 'layouts/admin/settings' %>
+      </div><!--/.main-content-->
+    </div><!--/.main-container-->
+
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-small btn-inverse">
+      <i class="icon-double-angle-up icon-only bigger-110"></i>
+    </a>
+    <%= javascript_include_tag "tjadmin", "data-turbolinks-track" => true %>
+  </body>
+</html>
