@@ -37,3 +37,10 @@
       create  app/views/layouts/admin/_shortcuts.html.erb
       create  app/views/layouts/admin/_sidebar.html.erb
       create  app/views/layouts/admin/application.html.erb
+
+## production.rb
+
+    config.assets.precompile += %w(
+      tjadmin.css tjadmin/ace-ie.css tjadmin/font-awesome-ie7.css
+      turbolinks.js tjadmin/jquery-2.0.3.js tjadmin/jquery-1.10.2.js tjadmin.js
+    )
