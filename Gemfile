@@ -12,8 +12,4 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
-gem 'sass-rails'
-gem 'jquery-rails'
 gem 'turbolinks'
-gem 'bootstrap-sass', '~> 2.3.2.1'
-gem 'font-awesome-rails', '~> 3.2.1.3'

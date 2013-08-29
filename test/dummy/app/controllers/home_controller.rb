@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  layout 'admin/application'
+  layout 'tjadmin/application'
   def index
   end
 end
