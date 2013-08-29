@@ -4932,21 +4932,21 @@ input[type=checkbox].ace.ace-switch.ace-switch-7:checked + .lbl::after {
 .ace-file-input input[type=file] {
   /*must be visible and on top for ie8/9 to actually work */
 
-  width: 100%\0/;
-  height: 30px\0/;
-  position: absolute\0/;
-  z-index: 1\0/;
+  width: 100%\0/IE8+9;
+  height: 30px\0/IE8+9;
+  position: absolute\0/IE8+9;
+  z-index: 1\0/IE8+9;
   filter: alpha(opacity=0);
-  cursor: pointer\0/;
+  cursor: pointer\0/IE8+9;
 }
 .ace-file-input input[type=file]:hover + label {
-  border-color: #f59942 \0/;
+  border-color: #f59942 \0/IE8+9;
 }
 .ace-file-multiple input[type=file] {
-  height: 100%\0/;
+  height: 100%\0/IE8+9;
 }
 .ace-file-input .remove {
-  z-index: 2\0/;
+  z-index: 2\0/IE8+9;
 }
 /** input error states */
 .control-group select,

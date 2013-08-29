@@ -20,7 +20,7 @@ Dummy::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -59,7 +59,10 @@ Dummy::Application.configure do
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-  # config.assets.precompile += %w( search.js )
+  config.assets.precompile += %w(
+    tjadmin.css tjadmin/ace-ie.css tjadmin/font-awesome-ie7.css
+    turbolinks.js tjadmin/jquery-2.0.3.js tjadmin/jquery-1.10.2.js tjadmin.js
+  )
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
