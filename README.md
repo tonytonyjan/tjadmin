@@ -1,3 +1,6 @@
+Hey, tonytonyjan (punk), this readme doc is a garbage. 
+Make something one can actually use, otherwise find something else you can do right, like gfy.
+
 # Tjadmin
 
 ## Usage & Example
